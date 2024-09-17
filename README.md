@@ -7,6 +7,9 @@
 #### Developer Tools: VSCode, Git, AWS, Anaconda Navigator, MongoDB, Apache NetBeans
 ####Soft Skills: Team Coordination, Analytical Thinking, Presentation Skills, Innovative Project Development
 
+## LinkedIn
+[Ritvik Vasantha Kumar](https://www.linkedin.com/in/ritvik-vk/)
+
 ## Education							       		
 | M.S., Computer Science	                | New York University                    | 			        		
 | B.E., Computer Science and Engineering  | Visvesvaraya Technological University  |
