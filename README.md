@@ -5,7 +5,7 @@
 #### Machine Learning & AI Tools: TensorFlow, Keras, Scikit-Learn, PyTorch
 #### Data Analysis Tools: Pandas, NumPy, Excel
 #### Developer Tools: VSCode, Git, AWS, Anaconda Navigator, MongoDB, Apache NetBeans
-####Soft Skills: Team Coordination, Analytical Thinking, Presentation Skills, Innovative Project Development
+#### Soft Skills: Team Coordination, Analytical Thinking, Presentation Skills, Innovative Project Development
 
 ## LinkedIn
 [Ritvik Vasantha Kumar](https://www.linkedin.com/in/ritvik-vk/)
