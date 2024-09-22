@@ -11,8 +11,8 @@
 [Ritvik Vasantha Kumar](https://www.linkedin.com/in/ritvik-vk/)
 
 ## Education							       		
-M.S., Computer Science, New York University
-B.E., Computer Science and Engineering, Visvesvaraya Technological University
+- M.S., Computer Science, New York University
+- B.E., Computer Science and Engineering, Visvesvaraya Technological University
 
 ## Work Experience
 ** Site under update **
