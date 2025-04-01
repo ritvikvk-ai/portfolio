@@ -8,8 +8,13 @@
   <style>
     body { font-family: 'Segoe UI', sans-serif; background-color: #f8f9fa; padding-top: 60px; }
     .hero { background: #fff; padding: 60px 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    .section-title { margin-top: 40px; font-weight: 600; }
-    .project-card { background-color: #ffffff; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .section-title { margin-top: 40px; font-weight: 600; text-align: center; }
+    .project-card, .edu-card, .work-card { background-color: #ffffff; padding: 20px; margin-bottom: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .skills-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding-left: 0; list-style-type: none; }
+    .skills-grid li { flex: 1 1 250px; background-color: #ffffff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); text-align: center; max-width: 300px; }
+    .skills-grid strong { display: block; margin-bottom: 8px; font-size: 1.1em; }
+    .edu-card h5, .work-card h5 { margin-bottom: 5px; }
+    .edu-card p, .work-card p { margin: 0; font-size: 0.95rem; }
   </style>
 </head>
 <body>
@@ -25,71 +30,92 @@
     </div>
 
     <h2 class="section-title">Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> Python, Java, C++, SQL, C, HTML, CSS</li>
-      <li><strong>ML/AI Tools:</strong> TensorFlow, Keras, Scikit-Learn, PyTorch</li>
-      <li><strong>Data Analysis:</strong> Pandas, NumPy, Excel</li>
-      <li><strong>Developer Tools:</strong> VSCode, Git, AWS, MongoDB, Docker, Gradio, Hugging Face, Qdrant</li>
-      <li><strong>Soft Skills:</strong> Team Coordination, Analytical Thinking, Presentation, Innovation</li>
-    </ul>
-
-    <h2 class="section-title">Education</h2>
-    <ul>
-      <li><strong>M.S.</strong> in Computer Science, New York University, GPA: 3.7 (Expected May 2026)</li>
-      <li><strong>B.E.</strong> in Computer Science and Engineering, VTU, India, CGPA: 8.89/10 (June 2022)</li>
-    </ul>
-
-    <h2 class="section-title">Experience</h2>
-    <div class="project-card">
-      <h5>Machine Learning Researcher – AI4CE Lab, NYU (Jan 2025 – Present)</h5>
-      <ul>
-        <li>Developed SeqNet-based Visual Place Recognition, improving accuracy by 25%</li>
-        <li>Enhanced BEVFormer precision by 17% for autonomous systems</li>
-        <li>Optimized multi-camera and multimodal datasets for robotics applications</li>
+    <div class="text-center">
+      <ul class="skills-grid">
+        <li><strong>Programming</strong>Python, SQL, Java, C++, C, HTML, CSS</li>
+        <li><strong>ML/AI Tools</strong>TensorFlow, Keras, Scikit-Learn, PyTorch</li>
+        <li><strong>Data Analysis</strong>Pandas, NumPy, PowerBI, Tableau, Excel</li>
+        <li><strong>Developer Tools</strong>VSCode, Git, AWS, MongoDB, Docker</li>
+        <li><strong>Model Deployment</strong>Gradio, Hugging Face, Qdrant</li>
+        <li><strong>Soft Skills</strong>Team Coordination, Analytical Thinking, Presentation, Innovation</li>
       </ul>
     </div>
-    <div class="project-card">
-      <h5>IT Intern – Rotana PJSC, UAE (May 2019 – Jun 2019)</h5>
+
+    <h2 class="section-title">Education</h2>
+    <div class="edu-card">
+      <h5>New York University</h5>
+      <p><em>M.S. in Computer Science</em> &nbsp; | &nbsp; <strong>May 2026</strong> &nbsp; | &nbsp; GPA: 3.7/4.0</p>
+      <p><strong>Relevant Coursework:</strong> Machine Learning, Artificial Intelligence, Big Data, Deep Learning</p>
+    </div>
+    <div class="edu-card">
+      <h5>Visvesvaraya Technological University</h5>
+      <p><em>B.E. in Computer Science and Engineering</em> &nbsp; | &nbsp; CGPA: 8.89/10</p>
+      <p><strong>Honors:</strong> Best Project Award for Image-to-Text Conversion System</p>
+    </div>
+
+    <h2 class="section-title">Work Experience</h2>
+    <div class="work-card">
+      <h5>AI4CE Lab, New York University</h5>
+      <p><em>Machine Learning Researcher</em> &nbsp; | &nbsp; <strong>Jan 2025 – Present</strong> &nbsp; | &nbsp; New York, NY</p>
       <ul>
-        <li>Resolved 5+ weekly network issues, improving uptime by 27%</li>
-        <li>Managed core infrastructure with 15% increase in efficiency</li>
+        <li>Engineered innovative Visual Place Recognition models through SeqNet, improving hierarchical place recognition
+accuracy by 25% in robotics applications via advanced sequential descriptor integration and rigorous testing.</li>
+        <li>Enhanced performance of BEVFormer architecture, resulting in a 17% increase in operational metrics for autonomous navigation systems.</li>
+        <li>Curated and optimized multi-camera, multimodal datasets to improve scene understanding, localization, and robotic path planning.</li>
+      </ul>
+    </div>
+    <div class="work-card">
+      <h5>Rotana Management PJSC</h5>
+      <p><em>IT Intern</em> &nbsp; | &nbsp; <strong>May 2019 – Jun 2019</strong> &nbsp; | &nbsp; Ras Al Khaimah, UAE</p>
+      <ul>
+        <li>Diagnosed and resolved frequent network issues, reducing operational downtime by 27%.</li>
+        <li>Maintained critical network infrastructure, increasing reliability and overall efficiency by 15%.</li>
+        <li>Supported core network infrastructure, reducing downtime by 19% and boosting reliability.</li>
       </ul>
     </div>
 
     <h2 class="section-title">Projects</h2>
     <div class="project-card">
-      <h5>Fine-Tuned RAG Systems Engineering</h5>
-      <p>Built RAG system for ROS2 using LLaMA 3, ClearML, Qdrant, and Gradio; boosted robotics question answering accuracy.</p>
+      <h5><a href="https://github.com/ritvikvk-ai/ai_project" target="_blank">Fine-Tuned RAG Systems Engineering</a></h5>
+      <ul>
+        <li>Built a RAG pipeline for ROS2 using ClearML, LLaMA 3, and Qdrant to support domain-specific robotic queries.</li>
+        <li>Deployed an interactive Gradio app to visualize answers based on robotic navigation data.</li>
+        <li>Improved response relevancy by fine-tuning LLMs with context-aware robotic datasets.</li>
+      </ul>
     </div>
     <div class="project-card">
-      <h5>Insider Trading Detection</h5>
-      <p>85% accuracy LSTM model for detecting insider trades; processed 1M+ records using Keras/TensorFlow.</p>
+      <h5><a href="https://ritvikvk-ai.github.io/insider-trading-detection/" target="_blank">Insider Trading Detection</a></h5>
+      <ul>
+        <li>Developed an LSTM-based model to identify patterns in insider trading activities.</li>
+        <li>Analyzed over 1 million records and integrated volatility prediction using TensorFlow and Keras.</li>
+        <li>Boosted suspicious activity detection by 20%, assisting regulatory monitoring.</li>
+      </ul>
     </div>
     <div class="project-card">
-      <h5>Credit Card Fraud Detection</h5>
-      <p>95% accuracy model using XGBoost/Random Forest; reduced false positives and analyzed 500K+ transactions.</p>
+      <h5><a href="https://ritvikvk-ai.github.io/credit-fraud/" target="_blank">Credit Card Fraud Detection</a></h5>
+      <ul>
+        <li>Implemented machine learning models including XGBoost and Random Forest on transaction datasets.</li>
+        <li>Achieved 95% accuracy while reducing false positives by 10%.</li>
+        <li>Preprocessed and modeled over 500,000 real-world records to enhance fraud alert systems.</li>
+      </ul>
     </div>
     <div class="project-card">
-      <h5>Image to Text Conversion</h5>
-      <p>Built deep learning model using Inception-v3 & LSTM; awarded Best Project of the Year (95% accuracy).</p>
+      <h5><a href="https://ritvikvk-ai.github.io/image-to-text/" target="_blank">Image to Text Conversion</a></h5>
+      <ul>
+        <li>Created an encoder-decoder model combining Inception-v3 and LSTM for image captioning.</li>
+        <li>Achieved 95% accuracy and significantly improved accessibility for visually impaired users.</li>
+        <li>Reduced processing time by 30% through optimization of the neural architecture.</li>
+        <li>Awarded "Best Project of the Year" by NMAMIT.</li>
+      </ul>
     </div>
     <div class="project-card">
       <h5>Other Projects</h5>
       <ul>
-        <li>Credit Risk Prediction (85% accuracy)</li>
-        <li>Real-Time Object Detection for Social Distancing</li>
-        <li>Bank Database Management System</li>
+        <li><strong>Credit Risk Prediction:</strong> Built a model predicting borrower risk with 85% accuracy using real loan data. <a href="https://ritvikvk-ai.github.io/credit-risk/" target="_blank">View</a></li>
+        <li><strong>Social Distancing Detector:</strong> Used YOLOv3 to detect physical distancing breaches in public spaces. <a href="https://ritvikvk-ai.github.io/social-distancing/" target="_blank">View</a></li>
+        <li><strong>Bank Database System:</strong> Developed a secure banking app using Java and SQL for managing transactions and accounts.</li>
       </ul>
     </div>
-
-    <h2 class="section-title">Live Demos</h2>
-    <ul>
-      <li><a href="https://ritvikvk-ai.github.io/insider-trading-detection/" target="_blank">Insider Trading Detection</a></li>
-      <li><a href="https://ritvikvk-ai.github.io/credit-fraud/" target="_blank">Credit Card Fraud Detection</a></li>
-      <li><a href="https://ritvikvk-ai.github.io/image-to-text/" target="_blank">Image to Text Conversion</a></li>
-      <li><a href="https://ritvikvk-ai.github.io/credit-risk/" target="_blank">Credit Risk Prediction</a></li>
-      <li><a href="https://ritvikvk-ai.github.io/social-distancing/" target="_blank">Social Distancing Detector</a></li>
-    </ul>
   </div>
 </body>
 </html>
